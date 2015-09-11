@@ -1,0 +1,18 @@
+$ORIGIN .
+$TTL 10800	; 3 hours
+5.16.172.in-addr.arpa	IN SOA	ns1.foo.org.nz. tec.sdn.net.5.16.172.in-addr.arpa. (
+				20140823   ; serial
+				10800      ; refresh (3 hours)
+				3600       ; retry (1 hour)
+				259200     ; expire (3 days)
+				3600       ; minimum (1 hour)
+				)
+			NS	ns1.foo.org.nz.
+			NS	ns2.foo.org.nz.
+$ORIGIN 5.16.172.in-addr.arpa.
+10			PTR	bsd-server.foo.org.nz.
+$TTL 3600	; 1 hour
+100			PTR	testclient.foo.org.nz.
+101			PTR	win-client.foo.org.nz.
+$TTL 10800	; 3 hours
+2			PTR	router1.foo.org.nz.

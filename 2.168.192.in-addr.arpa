@@ -1,0 +1,17 @@
+$TTL 3h
+$ORIGIN 2.168.192.in-addr.arpa.
+
+2.168.192.in-addr.arpa. IN SOA ns1.foo.org.nz. tec.sdn.net. (
+	20140821; serial number
+	3h; slave refresh
+	1h; slave retry
+	3d; slave expires
+	1h);negative ttl
+
+	; 2 NAME SERVER RECORDS
+2.168.192.in-addr.arpa. IN NS ns1.foo.org.nz.
+2.168.192.in-addr.arpa. IN NS ns2.foo.org.nz.
+
+	;PTR POINTER RECORDS
+101.2.168.192.in-addr.arpa. IN PTR bsd-relay-server.foo.org.nz.
+2.2.168.192.in-addr.arpa. IN PTR router2.foo.org.nz.
